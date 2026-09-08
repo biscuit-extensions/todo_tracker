@@ -1,7 +1,23 @@
 [extension]
 id = "todo_tracker"
 name = "Todo Tracker"
-version = "0.1.0"
-description = "Todo Tracker extension for Biscuit"
-author = "biscuit-extensions"
+version = "0.2.0"
+description = "Workspace scanner for TODO, FIXME, HACK, BUG, and NOTE annotations with line navigation and status summary"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = []
+tools = []
+
+[contributes]
+commands = [
+    { id = "todo_tracker.scan_workspace", title = "TODO Tracker: Scan Workspace" },
+    { id = "todo_tracker.scan_active_file", title = "TODO Tracker: Scan Current File" },
+    { id = "todo_tracker.next_todo", title = "TODO Tracker: Next TODO" },
+    { id = "todo_tracker.prev_todo", title = "TODO Tracker: Previous TODO" },
+    { id = "todo_tracker.find_fixmes", title = "TODO Tracker: Find All FIXMEs" }
+]
+views = [
+    { id = "todo_tracker.view", title = "TODO Tracker" }
+]
