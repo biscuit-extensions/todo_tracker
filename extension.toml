@@ -1,0 +1,7 @@
+[extension]
+id = "todo_tracker"
+name = "Todo Tracker"
+version = "0.1.0"
+description = "Todo Tracker extension for Biscuit"
+author = "biscuit-extensions"
+icon = "icon.png"
